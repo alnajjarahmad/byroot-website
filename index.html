@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* File: index.html */
 <!DOCTYPE html>
 <html lang="en">
@@ -70,3 +71,139 @@
   </script>
 </body>
 </html>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Byroot AIOps</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap">
+  <style>
+    @font-face {
+      font-family: 'Glass TTY VT220';
+      src: url('https://cdn.jsdelivr.net/gh/ahmadbyroot/terminal-fonts@main/Glass_TTY_VT220.ttf') format('truetype');
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container header-flex">
+      <img src="assets/byroot_logo_trans.png" alt="Byroot Logo" class="logo">
+      <h1>Byroot</h1>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#solutions">Solutions</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#industries">Industries</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="container">
+      <h2 class="typed-text"></h2>
+    </div>
+  </section>
+
+  
+  <section id="solutions">
+  <div class="container">
+    <h2>Our Solutions</h2>
+    <ul>
+      <li><strong>Pulse</strong>: Real-time observability engine with full visibility into performance, logs, and events.</li>
+      <li><strong>Arc</strong>: Optimizes AI/ML workloads with intelligent orchestration across cloud environments.</li>
+      <li><strong>Maturity Assessment</strong>: Evaluate your current AI readiness and define your path to AIOps maturity.</li>
+    </ul>
+  </div>
+</section>
+
+<section id="services">
+  <div class="container">
+    <h2>Our Services</h2>
+    <ul>
+      <li><strong>Data Modernization & Strategy</strong>: Move from legacy systems to cloud-native intelligence.</li>
+      <li><strong>Generative AI & Automation</strong>: Reduce manual load with LLMs and task automation tools.</li>
+      <li><strong>Cloud Optimization & Observability</strong>: Ensure uptime and performance across your digital assets.</li>
+      <li><strong>AIOps & Incident Intelligence</strong>: Analyze, alert, and resolve issues before users notice.</li>
+    </ul>
+  </div>
+</section>
+
+<section id="industries">
+  <div class="container">
+    <h2>Industries We Serve</h2>
+    <ul>
+      <li><strong>Telecom & Media</strong>: Manage massive infrastructure and demand surges with predictive ops.</li>
+      <li><strong>Retail & E-Commerce</strong>: Keep digital storefronts responsive and customer journeys seamless.</li>
+      <li><strong>Financial Services</strong>: Operate securely and meet compliance through insight-driven infrastructure.</li>
+      <li><strong>Healthcare & Life Sciences</strong>: Enable data integrity and privacy across research and operations.</li>
+      <li><strong>Public Sector</strong>: Power reliable digital experiences for citizens and national platforms.</li>
+    </ul>
+  </div>
+</section>
+
+<section id="about">
+  <div class="container">
+    <h2>About Byroot</h2>
+    <p>Byroot is a Saudi-native company delivering AI-powered operations (AIOps) to modernize infrastructure across sectors. Built by cloud and AI experts, we localize innovation to empower digital transformation.</p>
+    <p>We help teams detect, respond, and learn from operational data using AI—not just dashboards. We focus on autonomy, scalability, and performance.</p>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="container">
+    <h2>Contact Us</h2>
+    <p>Email: <a href="mailto:info@byroot.co">info@byroot.co</a></p>
+    <p>Location: Riyadh, Saudi Arabia</p>
+    <form class="contact-form" action="#" method="POST">
+      <label for="name">Name:</label><br />
+      <input type="text" id="name" name="name" required><br />
+
+      <label for="email">Email:</label><br />
+      <input type="email" id="email" name="email" required><br />
+
+      <label for="message">Message:</label><br />
+      <textarea id="message" name="message" rows="5" required></textarea><br />
+
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+</section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Byroot. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    const text = "Empowering AIOps in the Saudi Market_";
+    const target = document.querySelector(".typed-text");
+    let index = 0;
+    function typeText() {
+      if (index < text.length) {
+        target.innerHTML += text.charAt(index);
+        index++;
+        setTimeout(typeText, 75);
+      } else {
+        blinkCursor();
+      }
+    }
+    function blinkCursor() {
+      setInterval(() => {
+        target.innerHTML = target.innerHTML.endsWith('_')
+          ? target.innerHTML.slice(0, -1)
+          : target.innerHTML + '_';
+      }, 500);
+    }
+    document.addEventListener("DOMContentLoaded", typeText);
+  </script>
+</body>
+</html>
+>>>>>>> 97bc068a1343f7dcaab8e5ec9661b4fa0356aa1e
