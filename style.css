@@ -1,0 +1,78 @@
+/* File: style.css */
+body {
+  background-color: #000;
+  color: #00ff00;
+  font-family: 'Glass TTY VT220', 'Courier New', Courier, monospace;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.header-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.logo {
+  height: 50px;
+  margin-right: 20px;
+}
+
+header {
+  background: #111;
+  padding: 20px 0;
+  border-bottom: 2px solid #00ff00;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  list-style: none;
+  margin-top: 15px;
+  padding: 0;
+}
+
+nav a {
+  color: #00ff00;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hero {
+  background: #111;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.typed-text {
+  font-size: 2rem;
+  font-family: 'Glass TTY VT220', monospace;
+  white-space: pre;
+}
+
+footer {
+  background: #111;
+  text-align: center;
+  padding: 20px;
+  border-top: 2px solid #00ff00;
+}
+
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+}
