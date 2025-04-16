@@ -2,10 +2,13 @@
 body {
   background-color: #0d0d0d;
   color: #00FF66;
-  font-family: 'Glass TTY VT220', monospace;
-  margin: 0;
-  padding: 0;
+  font-family: 'Glass TTY VT220', monospace;  /* Use CDN version for body text */
 }
+
+h1, h2, h3, .hero-text, .features h2, .about h2, .contact h2 {
+  font-family: 'Glass TTY VT220 Custom', monospace;  /* Use local version for headings */
+}
+
 
 .logo {
   height: 60px;
