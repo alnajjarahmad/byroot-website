@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Byroot Preview</title>
@@ -13,15 +14,24 @@
   </style>
 </head>
 <body>
+<div id="loading-overlay">
+  <div class="loader">Loading...</div>
+</div>
+<script>
+  window.addEventListener('load', () => {
+    document.getElementById('loading-overlay').style.display = 'none';
+  });
+</script>
+
   <header>
     <div class="hero">
-      <img src="assets/byroot_logo_trans.png" alt="Byroot Logo" class="logo"/>
-      <h1 class="typed-text"></h1>
+      <img src="assets/byroot_logo_trans.png" data-aos="zoom-in" alt="Byroot Logo" class="logo"/>
+      <h1 class="hero-text" data-aos="fade-up"><span class="typed-text"></span></h1>
       <p class="subtext">From observability to autonomous operations — purpose-built for enterprises in KSA.</p>
     </div>
   </header>
 
-  <section class="features">
+  <section class="features" data-aos="fade-up">
     <h2>Our Offerings</h2>
     <div class="grid">
       <div class="card"><h3>Pulse</h3><p>Real-time AI observability across your entire stack.</p></div>
@@ -31,12 +41,12 @@
     </div>
   </section>
 
-  <section class="about">
+  <section class="about" data-aos="fade-left">
     <h2>About Byroot</h2>
     <p>Byroot is a Saudi AIOps services company helping enterprises run leaner, smarter, and more autonomous infrastructure. We specialize in enabling local compliance, AI observability, and operational intelligence across industries.</p>
   </section>
 
-  <section class="contact">
+  <section class="contact" data-aos="fade-right">
     <h2>Contact Us</h2>
     <form class="contact-form" action="#" method="POST">
       <input type="text" name="name" placeholder="Your name" required />
@@ -51,7 +61,7 @@
   </footer>
 
   <script>
-    const text = "Empowering AIOps in the Saudi Market_";
+    const text = "Reimagining AIOps for the Saudi Market_";
     const target = document.querySelector(".typed-text");
     let index = 0;
     function typeText() {
@@ -71,6 +81,10 @@
       }, 500);
     }
     document.addEventListener("DOMContentLoaded", typeText);
+  </script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
   </script>
 </body>
 </html>
