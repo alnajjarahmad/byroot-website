@@ -16,7 +16,7 @@
   <header>
     <div class="hero">
       <img src="assets/byroot_logo_trans.png" alt="Byroot Logo" class="logo"/>
-      <h1 class="hero-text">Reimagining AIOps<br />for the Saudi Market</h1>
+      <h1 class="typed-text"></h1>
       <p class="subtext">From observability to autonomous operations — purpose-built for enterprises in KSA.</p>
     </div>
   </header>
@@ -49,5 +49,28 @@
   <footer>
     <p>&copy; 2025 Byroot. All rights reserved.</p>
   </footer>
+
+  <script>
+    const text = "Empowering AIOps in the Saudi Market_";
+    const target = document.querySelector(".typed-text");
+    let index = 0;
+    function typeText() {
+      if (index < text.length) {
+        target.innerHTML += text.charAt(index);
+        index++;
+        setTimeout(typeText, 60);
+      } else {
+        blinkCursor();
+      }
+    }
+    function blinkCursor() {
+      setInterval(() => {
+        target.innerHTML = target.innerHTML.endsWith('_')
+          ? target.innerHTML.slice(0, -1)
+          : target.innerHTML + '_';
+      }, 500);
+    }
+    document.addEventListener("DOMContentLoaded", typeText);
+  </script>
 </body>
 </html>
