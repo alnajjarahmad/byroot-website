@@ -82,6 +82,7 @@ footer {
   padding: 20px;
   text-align: center;
   font-size: 0.8rem;
+<<<<<<< HEAD
 }
 
 #loading-overlay {
@@ -106,4 +107,6 @@ a, button {
 a:hover, button:hover {
   color: #000;
   background: #00ff88;
+=======
+>>>>>>> 22fcfd772d1b2afbf2bf466a05c2e26961303559
 }
