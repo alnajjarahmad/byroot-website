@@ -1,14 +1,11 @@
 
 body {
-  background-color: #0d0d0d;
-  color: #00FF66;
-  font-family: 'Glass TTY VT220', monospace;  /* Use CDN version for body text */
+  font-family: 'Glass TTY VT220', monospace; /* CDN for body text */
 }
 
-h1, h2, h3, .hero-text, .features h2, .about h2, .contact h2 {
-  font-family: 'Glass TTY VT220 Custom', monospace;  /* Use local version for headings */
+h1, h2, h3, .typed-text {
+  font-family: 'Glass TTY VT220 Custom', monospace; /* Local custom for headings */
 }
-
 
 .logo {
   height: 60px;
@@ -98,7 +95,6 @@ footer {
   align-items: center;
   justify-content: center;
   z-index: 9999;
-  font-family: 'Glass TTY VT220', monospace;
   font-size: 1.2rem;
 }
 
