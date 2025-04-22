@@ -1,5 +1,7 @@
 
 body {
+  background-color: #000; /* Sets the background to black */
+  color: #00FF66; /* Optional: Sets text color to green for contrast */
   font-family: 'Glass TTY VT220', monospace; /* CDN for body text */
 }
 
