@@ -62,7 +62,10 @@
   
     <label for="message">Message:</label>
     <textarea id="message" name="message" required></textarea>
-  
+    
+    <!-- 🕵️ Honeypot (anti-bot field, invisible to real users) -->
+    <input type="text" name="website" style="display:none;" tabindex="-1" autocomplete="off">
+
     <button type="submit">Send</button>
   </form>
   
