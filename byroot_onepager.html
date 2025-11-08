@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>byroot | Advisory one-pager</title>
+  <style>
+    :root {
+      --bg: #000000;
+      --panel: #050505;
+      --border: #0b3b24;
+      --text: #00ff66;
+      --muted: #6cffaa;
+      --accent: #00ff66;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: "Glass TTY VT220", "Courier New", monospace;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      padding: 24px;
+    }
+
+    .page {
+      width: 100%;
+      max-width: 900px;
+      border: 1px solid var(--border);
+      background: radial-gradient(circle at top left, #041a0e 0, #000000 55%);
+      padding: 24px 28px 20px 28px;
+      position: relative;
+    }
+
+    /* Subtle scanline effect for terminal feel */
+    .page::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: repeating-linear-gradient(
+        to bottom,
+        rgba(0, 255, 102, 0.06),
+        rgba(0, 255, 102, 0.06) 1px,
+        transparent 1px,
+        transparent 3px
+      );
+      opacity: 0.35;
+      pointer-events: none;
+    }
+
+    .content {
+      position: relative;
+      z-index: 1;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 18px;
+    }
+
+    .logo-block {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .logo-block img {
+      height: 40px;
+      width: auto;
+      image-rendering: crisp-edges;
+    }
+
+    .brand-text {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+
+    .brand-name {
+      font-size: 22px;
+      letter-spacing: 0.08em;
+      text-transform: lowercase;
+    }
+
+    .brand-tagline {
+      font-size: 11px;
+      color: var(--muted);
+      opacity: 0.9;
+    }
+
+    .status-line {
+      font-size: 11px;
+      text-align: right;
+      color: var(--muted);
+      opacity: 0.85;
+    }
+
+    .status-line span {
+      color: var(--accent);
+    }
+
+    .section {
+      border: 1px solid var(--border);
+      background: rgba(0, 0, 0, 0.75);
+      margin-bottom: 14px;
+      padding: 10px 12px 12px 12px;
+    }
+
+    .prompt {
+      font-size: 12px;
+      color: var(--accent);
+      margin-bottom: 6px;
+      white-space: nowrap;
+    }
+
+    .prompt .path {
+      color: var(--muted);
+    }
+
+    .prompt .cmd {
+      color: var(--accent);
+    }
+
+    .body-text {
+      font-size: 11px;
+      line-height: 1.5;
+      color: var(--text);
+    }
+
+    .highlight {
+      color: var(--muted);
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: 1.05fr 1.05fr 1fr 1fr;
+      gap: 4px 10px;
+      font-size: 10px;
+    }
+
+    .services-grid-header {
+      font-weight: bold;
+      color: var(--muted);
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 4px;
+      margin-bottom: 2px;
+    }
+
+    .service-cell {
+      padding-right: 4px;
+    }
+
+    .service-title {
+      font-weight: bold;
+      color: var(--accent);
+      font-size: 10px;
+      margin-bottom: 1px;
+    }
+
+    .service-desc {
+      font-size: 10px;
+      line-height: 1.4;
+    }
+
+    .why-list {
+      list-style: none;
+      padding-left: 0;
+      margin: 4px 0 0 0;
+      font-size: 11px;
+    }
+
+    .why-list li::before {
+      content: "• ";
+      color: var(--accent);
+    }
+
+    .steps {
+      list-style: none;
+      padding-left: 0;
+      margin: 4px 0 8px 0;
+      font-size: 11px;
+    }
+
+    .steps li::before {
+      content: "# ";
+      color: var(--accent);
+    }
+
+    footer {
+      margin-top: 6px;
+      padding-top: 6px;
+      border-top: 1px solid var(--border);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 9px;
+      color: var(--muted);
+    }
+
+    .footer-left {
+      white-space: nowrap;
+    }
+
+    .footer-right {
+      text-align: right;
+      white-space: nowrap;
+    }
+
+    /* Print adjustments */
+    @media print {
+      body {
+        background: #000000;
+      }
+      .page {
+        box-shadow: none;
+        border: 1px solid var(--border);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <div class="content">
+      <header>
+        <div class="logo-block">
+          <!-- Replace byroot_logo.png with the exported PNG from your PSD -->
+          <img src="assets/byroot_logo.png" alt="byroot logo" />
+          <div class="brand-text">
+            <div class="brand-name">byroot</div>
+            <div class="brand-tagline">
+              independent ai &amp; cloud architecture advisory for saudi &amp; gcc
+            </div>
+          </div>
+        </div>
+        <div class="status-line">
+          SESSION: <span>active</span><br />
+          LOCATION: <span>Riyadh • Saudi Arabia</span>
+        </div>
+      </header>
+
+      <!-- whoami -->
+      <section class="section">
+        <div class="prompt">
+          <span class="path">/byroot</span> <span class="cmd">$ whoami</span>
+        </div>
+        <div class="body-text">
+          byroot is a focused architecture firm founded by two senior cloud and ai specialists
+          who have spent decades designing systems across the us, gcc, and saudi arabia.
+          <br /><br />
+          we work with technology leaders, system integrators, and founders who need clear,
+          implementation-ready architecture for ai and cloud initiatives without vendor noise or
+          internal politics.
+          <br /><br />
+          our work is simple in intent:
+          <span class="highlight">turn complex infrastructure decisions into clear, buildable plans</span>
+          that executives and engineers can both agree on.
+        </div>
+      </section>
+
+      <!-- services -->
+      <section class="section">
+        <div class="prompt">
+          <span class="path">/byroot/services</span> <span class="cmd">$ services --list</span>
+        </div>
+        <div class="services-grid">
+          <div class="services-grid-header">offer</div>
+          <div class="services-grid-header">description</div>
+          <div class="services-grid-header">duration</div>
+          <div class="services-grid-header">starting fee</div>
+
+          <div class="service-cell">
+            <div class="service-title">architecture sprint</div>
+          </div>
+          <div class="service-cell">
+            <div class="service-desc">
+              rapid 10-day engagement that produces a validated solution design, high-level integration map, and
+              clear build path for your team or partner.
+            </div>
+          </div>
+          <div class="service-cell">
+            <div class="service-desc">10 days</div>
+          </div>
+          <div class="service-cell">
+            <div class="service-desc">usd 3,000 – 5,000</div>
+          </div>
+
+          <div class="service-cell">
+            <div class="service-title">rfp readiness review</div>
+          </div>
+          <div class="service-cell">
+            <div class="service-desc">
+              independent review of proposals or designs before submission to strengthen technical scoring,
+              compliance, and story.
+            </div>
+          </div>
+          <div class="service-cell">
+            <div class="service-desc">~1 week</div>
+          </div>
+          <div class="service-cell">
+            <div class="service-desc">usd 2,000 – 4,000</div>
+          </div>
+
+          <div class="service-cell">
+            <div class="service-title">vendor-neutral advisory</div>
+          </div>
+          <div class="service-cell">
+            <div class="service-desc">
+              objective guidance on hyperscaler, on-prem, or hybrid choices, aligned with data-locality and
+              regulatory expectations in saudi arabia.
+            </div>
+          </div>
+          <div class="service-cell">
+            <div class="service-desc">~2 weeks</div>
+          </div>
+          <div class="service-cell">
+            <div class="service-desc">usd 5,000 – 10,000</div>
+          </div>
+
+          <div class="service-cell">
+            <div class="service-title">poc accelerator</div>
+          </div>
+          <div class="service-cell">
+            <div class="service-desc">
+              technical roadmap for a working ai or data-platform prototype, ready for internal funding or client
+              presentation.
+            </div>
+          </div>
+          <div class="service-cell">
+            <div class="service-desc">~3 weeks</div>
+          </div>
+          <div class="service-cell">
+            <div class="service-desc">usd 8,000 – 15,000</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- why byroot -->
+      <section class="section">
+        <div class="prompt">
+          <span class="path">/byroot</span> <span class="cmd">$ why-byroot</span>
+        </div>
+        <ul class="why-list">
+          <li><span class="highlight">independent</span> · no vendor quota, no sales target buried in the background.</li>
+          <li><span class="highlight">saudi focused</span> · familiarity with ndmo, sama, and national data sensitivity.</li>
+          <li><span class="highlight">execution grade</span> · every output is designed for real delivery, not theory.</li>
+          <li><span class="highlight">experience that travels</span> · decades across telco, enterprise, and high-scale ai workloads.</li>
+        </ul>
+      </section>
+
+      <!-- start.sh -->
+      <section class="section">
+        <div class="prompt">
+          <span class="path">/byroot</span> <span class="cmd">$ start.sh</span>
+        </div>
+        <ul class="steps">
+          <li>book a 30-minute diagnostic session.</li>
+          <li>we map your challenge and define clear outcomes and constraints.</li>
+          <li>you receive a fixed-price proposal within 24 hours.</li>
+        </ul>
+        <div class="body-text">
+          one small scope is enough to start. we prefer a single well-defined problem over a vague “transformation program.”
+        </div>
+      </section>
+
+      <footer>
+        <div class="footer-left">
+          contact@byroot.co | byroot.co
+        </div>
+        <div class="footer-right">
+          Riyadh • Saudi Arabia
+        </div>
+      </footer>
+    </div>
+  </div>
+</body>
+</html>
