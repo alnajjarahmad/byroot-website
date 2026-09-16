@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>byroot Technologies · Sovern Stack, sovereign AI infrastructure for regulated Saudi operators</title>
-  <meta name="description" content="A pre integrated, air gapped AI node for regulated environments in Saudi Arabia. Arabic first models, retrieval and governance inside your perimeter, deployed in days." />
+  <title>Sovern Stack by byroot · An air gapped AI node for regulated environments</title>
+  <meta name="description" content="Sovern Stack is a pre integrated AI node that runs Arabic first models, retrieval and governance inside your own network, with no outside connectivity. Racked, supported and audited like the rest of your infrastructure." />
   <link rel="canonical" href="https://byroot.co/" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://byroot.co/" />
-  <meta property="og:title" content="byroot Technologies · Sovern Stack" />
-  <meta property="og:description" content="A pre integrated, air gapped AI node for regulated environments in Saudi Arabia. Arabic first models, retrieval and governance inside your perimeter, deployed in days." />
+  <meta property="og:title" content="Sovern Stack by byroot" />
+  <meta property="og:description" content="A pre integrated AI node that runs Arabic first models, retrieval and governance inside your own network, with no outside connectivity." />
   <meta property="og:image" content="https://byroot.co/assets/og.jpg" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
@@ -21,7 +21,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css" />
-  <link rel="stylesheet" href="style.css?v=4" />
+  <link rel="stylesheet" href="style.css?v=5" />
   <script>document.documentElement.classList.add('js');</script>
 </head>
 <body>
@@ -36,10 +36,11 @@
     <nav aria-label="Primary">
       <ul class="nav-links">
         <li><a href="#product">Product</a></li>
-        <li><a href="#how-it-works">How it works</a></li>
-        <li><a href="#who">Who it is for</a></li>
-        <li><a href="#regulation">Regulation</a></li>
-        <li><a href="#company">Company</a></li>
+        <li><a href="#work">Use cases</a></li>
+        <li><a href="#deployment">Deployment</a></li>
+        <li><a href="#specs">Specifications</a></li>
+        <li><a href="#compliance">Governance</a></li>
+        <li><a href="#faq">FAQ</a></li>
       </ul>
     </nav>
     <a href="#contact" class="btn btn-primary btn-sm">Request a briefing</a>
@@ -48,129 +49,206 @@
 
 <main id="main">
 
-  <!-- 1. Hero -->
+  <!-- Hero -->
   <section class="hero" aria-labelledby="hero-title">
     <div class="hero-bleed" aria-hidden="true">
       <img src="assets/img/racks.png" alt="" width="1004" height="1080" fetchpriority="high" />
     </div>
     <div class="container hero-inner">
-      <p class="label" style="--i: 0">Sovereign · Deployable · Governed</p>
-      <h1 id="hero-title" style="--i: 1">Sovereign AI infrastructure for the enterprises that cannot use the cloud.</h1>
-      <p class="hero-sub" style="--i: 2">Sovern Stack is a pre integrated, air gapped AI node for regulated environments. Deployed in days, inside your perimeter, mapped to the controls your auditor tests.</p>
+      <p class="label" style="--i: 0">Sovern Stack</p>
+      <h1 id="hero-title" style="--i: 1">An AI node that runs entirely inside your network.</h1>
+      <p class="hero-sub" style="--i: 2">Arabic first models, retrieval over your own documents, and a full audit trail, delivered as one tested appliance with no outside connectivity.</p>
       <div class="hero-actions" style="--i: 3">
         <a href="#contact" class="btn btn-primary">Request a briefing</a>
-        <a href="#how-it-works" class="btn btn-quiet">See how it works <i class="ph ph-arrow-right" aria-hidden="true"></i></a>
+        <a href="#product" class="btn btn-quiet">See what ships <i class="ph ph-arrow-right" aria-hidden="true"></i></a>
       </div>
-      <p class="hero-meta" style="--i: 4">byroot Technologies · Riyadh, Saudi Arabia</p>
+      <p class="hero-meta" style="--i: 4">Built by byroot Technologies · Riyadh, Saudi Arabia</p>
     </div>
   </section>
 
-  <!-- Facts -->
+  <!-- Fact bar -->
   <section class="facts" aria-label="At a glance">
     <dl class="container facts-grid">
-      <div><dt>Control mapping</dt><dd>Evidence ready</dd><p>Mapped to the isolation and residency controls in your framework</p></div>
-      <div><dt>Outside connections</dt><dd>Zero</dd><p>No internet route is ever created on the node</p></div>
-      <div><dt>Delivery dock to first answer</dt><dd>Days</dd><p>Not months of platform engineering</p></div>
-      <div><dt>Language</dt><dd>Arabic first</dd><p>Models and retrieval run on the node itself</p></div>
+      <div><dt>Connectivity</dt><dd>Zero outbound</dd><p>No internet route is created on the node</p></div>
+      <div><dt>Languages</dt><dd>Arabic first</dd><p>Arabic and English retrieval, including scanned documents</p></div>
+      <div><dt>Time to first answer</dt><dd>Days</dd><p>Racked, ingested and serving inside one engagement</p></div>
+      <div><dt>Evidence</dt><dd>Control mapped</dd><p>Logs and reports an auditor can read</p></div>
     </dl>
   </section>
 
-  <!-- 2. The problem -->
-  <section id="problem" class="section" aria-labelledby="problem-title">
+  <!-- What ships -->
+  <section id="product" class="section" aria-labelledby="product-title">
     <div class="container rail-grid">
       <div class="rail-head">
-        <p class="label">The problem</p>
-        <h2 id="problem-title">Regulated operators want AI inside their networks. Three walls stop them.</h2>
+        <p class="label">The product</p>
+        <h2 id="product-title">Everything the node needs, in one crate.</h2>
+      </div>
+      <div class="rail-body">
+        <p class="lead">Private AI usually means assembling GPU servers, model serving, a vector database, Arabic retrieval, access control and logging by hand. Sovern Stack arrives with all of it integrated and tested, so the work your team does is connecting data and setting policy, not building a platform.</p>
+      </div>
+    </div>
+
+    <div class="container product-grid">
+      <ul class="ships">
+        <li class="reveal">
+          <i class="ph ph-cpu" aria-hidden="true"></i>
+          <h3>Compute</h3>
+          <p>A GPU node sized for a department or a site, with NVMe storage and isolated networking, built to be racked in your own facility.</p>
+        </li>
+        <li class="reveal">
+          <i class="ph ph-brain" aria-hidden="true"></i>
+          <h3>Models</h3>
+          <p>An Arabic first language model with a registry for versions, and the option to run open weight models you already trust.</p>
+        </li>
+        <li class="reveal">
+          <i class="ph ph-database" aria-hidden="true"></i>
+          <h3>Retrieval</h3>
+          <p>A vector database, ingestion for PDF and scanned paper, and connectors to the document systems you already run.</p>
+        </li>
+        <li class="reveal">
+          <i class="ph ph-stack" aria-hidden="true"></i>
+          <h3>Platform</h3>
+          <p>Model serving, GPU scheduling and orchestration, operated as an appliance. Nobody on your side edits a Kubernetes manifest.</p>
+        </li>
+        <li class="reveal">
+          <i class="ph ph-list-checks" aria-hidden="true"></i>
+          <h3>Governance</h3>
+          <p>Access by role, retention rules, and an audit trail covering every prompt, every retrieved document and every answer.</p>
+        </li>
+        <li class="reveal">
+          <i class="ph ph-lifebuoy" aria-hidden="true"></i>
+          <h3>Support</h3>
+          <p>Model and platform updates delivered on physical media, health monitoring you can read locally, and an agreed response time.</p>
+        </li>
+      </ul>
+
+      <figure class="node-frame reveal">
+        <img src="assets/img/node.png" alt="The Sovern node, a rack mountable AI appliance" width="620" height="690" loading="lazy" />
+        <figcaption>The node, installed in your own rack</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- Use cases -->
+  <section id="work" class="section section-tint" aria-labelledby="work-title">
+    <div class="container rail-grid">
+      <div class="rail-head">
+        <p class="label">Use cases</p>
+        <h2 id="work-title">What teams actually do with it.</h2>
+      </div>
+      <div class="rail-body">
+        <p class="lead">The node answers questions about the documents your organization already holds. Nothing is sent anywhere to make that happen.</p>
+      </div>
+    </div>
+
+    <div class="container">
+      <ol class="usecases">
+        <li class="reveal">
+          <div class="usecase-head">
+            <h3>Root cause analysis over your own incident history</h3>
+            <p class="usecase-who">Operations and maintenance engineers</p>
+          </div>
+          <div class="usecase-body">
+            <p>Engineers ask what happened the last time equipment failed under similar conditions. The node reads incident reports, maintenance logs and shift notes in Arabic and English, and answers with the source documents attached so the answer can be checked.</p>
+            <p class="example"><span>Example request</span><span lang="ar" dir="rtl">ما سبب توقف المضخة الثالثة الأسبوع الماضي</span></p>
+          </div>
+        </li>
+        <li class="reveal">
+          <div class="usecase-head">
+            <h3>Procedures and manuals, answered from the current revision</h3>
+            <p class="usecase-who">Field teams, quality and compliance</p>
+          </div>
+          <div class="usecase-body">
+            <p>Staff ask how a task should be performed and get the governing procedure, its revision date and the exact clause, instead of a paraphrase. Superseded revisions stay searchable, and the answer says which one it used.</p>
+            <p class="example"><span>Example request</span><span>Which isolation steps apply before maintenance on a live line?</span></p>
+          </div>
+        </li>
+        <li class="reveal">
+          <div class="usecase-head">
+            <h3>Copilots and APIs inside the systems you already run</h3>
+            <p class="usecase-who">Digital and platform teams</p>
+          </div>
+          <div class="usecase-body">
+            <p>The node exposes internal APIs, so answers appear inside the tools people already use, under the same access rules. Every call is logged against a named user, and nothing leaves the perimeter to serve it.</p>
+            <p class="example"><span>Example request</span><span>Summarise this week's shift handovers for the plant manager</span></p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- Deployment and operations -->
+  <section id="deployment" class="section" aria-labelledby="deployment-title">
+    <div class="container rail-grid">
+      <div class="rail-head sticky">
+        <p class="label">Deployment</p>
+        <h2 id="deployment-title">Installed, connected and serving in days.</h2>
+        <p class="aside">One guided engagement. No cloud accounts are opened and no data leaves the building.</p>
       </div>
 
       <div class="rail-body">
-        <p class="lead">In regulated environments, the rules decide where data may be processed long before anyone compares models. Isolation mandates, residency requirements and outsourcing rules all point the same way: sensitive data stays inside the perimeter. The strictest case is NCA OTCC-1:2022, which requires operational technology networks to be isolated from all outside networks. Not just the public internet. Not just foreign clouds. Every outside network, including sovereign clouds inside Saudi Arabia.</p>
-        <p class="lead">Those rules remove every cloud AI vendor, local or global, from the buying conversation. The organizations still have the mandate to adopt AI. Nobody has built the product that fits inside the rule.</p>
-
-        <ol class="rows walls">
+        <ol class="rows steps">
           <li class="reveal">
             <span class="idx">01</span>
             <div>
-              <h3>The regulatory wall</h3>
-              <p>Isolation and residency rules place sensitive workloads out of reach of cloud AI. OTCC-1:2022 is the sharpest case, with four domains, 122 sub controls and penalties up to SAR 25 million under the NCA Regulations of December 2024. Banking, government and healthcare rules point the same way.</p>
+              <h3>Rack it</h3>
+              <p>The node arrives pre configured. It is installed inside your operational or enterprise network. No internet route is created for it.</p>
             </div>
           </li>
           <li class="reveal">
             <span class="idx">02</span>
             <div>
-              <h3>The integration wall</h3>
-              <p>Private AI means GPU servers, model serving, vector search, Arabic retrieval, audit logging and observability. Assembled by hand, this takes months and specialist teams the operators do not have.</p>
+              <h3>Connect your documents</h3>
+              <p>Connectors ingest incident reports, maintenance logs, procedures and manuals, in Arabic and English, including scanned paper.</p>
             </div>
           </li>
           <li class="reveal">
             <span class="idx">03</span>
             <div>
-              <h3>The talent wall</h3>
-              <p>AI infrastructure engineers are scarce in the Kingdom and expensive everywhere. No organization wants to staff a platform team for one department's pilot.</p>
+              <h3>Connect your directory</h3>
+              <p>Access follows the roles you already maintain, so people see what their role allows and every request is attributable.</p>
+            </div>
+          </li>
+          <li class="reveal">
+            <span class="idx">04</span>
+            <div>
+              <h3>Set policy</h3>
+              <p>Retention, logging and approval rules are configured with your security team and recorded as evidence for review.</p>
+            </div>
+          </li>
+          <li class="reveal">
+            <span class="idx">05</span>
+            <div>
+              <h3>Run it</h3>
+              <p>Your team uses it. We monitor health, review accuracy with you, and bring updates on media when you schedule them.</p>
             </div>
           </li>
         </ol>
 
-        <p class="note reveal"><strong>Net effect.</strong> AI adoption in Saudi critical infrastructure is stalled at the deployment step, not the ambition step. The budget exists. The mandate exists. The deployable product does not.</p>
+        <dl class="ops reveal">
+          <div><dt>Updates</dt><dd>Models and platform arrive on physical media during scheduled windows. The node never reaches out for them.</dd></div>
+          <div><dt>Monitoring</dt><dd>Accuracy, load and capacity are visible locally, with reports you can export for your own reviews.</dd></div>
+          <div><dt>Ownership</dt><dd>The hardware, the data and the logs are yours. We stay accountable for the platform after delivery.</dd></div>
+        </dl>
       </div>
     </div>
   </section>
 
-  <!-- 3. The product -->
-  <section id="product" class="section section-tint" aria-labelledby="product-title">
+  <!-- Specifications -->
+  <section id="specs" class="section section-tint" aria-labelledby="specs-title">
     <div class="container rail-grid">
       <div class="rail-head">
-        <p class="label">The product</p>
-        <h2 id="product-title">Sovern Stack: a pre integrated sovereign AI node.</h2>
+        <p class="label">Specifications</p>
+        <h2 id="specs-title">Two sizes, one system.</h2>
       </div>
       <div class="rail-body">
-        <p class="lead">One installation, full AI readiness. Hardware, models, retrieval, governance and observability ship as one tested system, inside the customer's perimeter, with zero outside connectivity. The same node serves an air gapped plant network and a regulated head office.</p>
+        <p class="lead">Both configurations run the same software, the same governance and the same support model. Sizing follows how many people use it and how much you need it to read.</p>
       </div>
-    </div>
-
-    <div class="container product-grid">
-      <div class="architecture reveal">
-        <p class="arch-caption">Reference architecture, top to bottom</p>
-        <ol class="layers">
-          <li>
-            <span class="layer-name">Applications</span>
-            <span class="layer-detail">Copilots · Document intelligence · Root cause analysis · Secure APIs</span>
-          </li>
-          <li>
-            <span class="layer-name">Models</span>
-            <span class="layer-detail">Llama based sovereign LLM · Fine tuned Arabic · Model registry</span>
-          </li>
-          <li>
-            <span class="layer-name">Data layer</span>
-            <span class="layer-detail">Vector DB · Arabic RAG pipelines · Secure connectors</span>
-          </li>
-          <li>
-            <span class="layer-name">AI platform</span>
-            <span class="layer-detail">Kubernetes · Model serving · GPU scheduling</span>
-          </li>
-          <li class="layer-base">
-            <span class="layer-name">Sovereign node</span>
-            <span class="layer-detail">NVIDIA L4 or dual L40S · NVMe · Isolated networking</span>
-          </li>
-        </ol>
-        <p class="rail-note">Governance, audit and observability run across every layer</p>
-      </div>
-
-      <figure class="node-frame reveal">
-        <img src="assets/img/node.png" alt="The Sovern node, a single rack mountable AI appliance" width="620" height="690" loading="lazy" />
-      </figure>
     </div>
 
     <div class="container">
-      <ul class="properties">
-        <li class="reveal"><i class="ph ph-vault" aria-hidden="true"></i><h3>Sovereign</h3><p>Data never leaves the facility. Air gapped by design, mapped control by control to the framework that governs you.</p></li>
-        <li class="reveal"><i class="ph ph-package" aria-hidden="true"></i><h3>Simple</h3><p>Pre integrated hardware and software. Days to first answer, not months of platform engineering.</p></li>
-        <li class="reveal"><i class="ph ph-list-checks" aria-hidden="true"></i><h3>Governed</h3><p>Every prompt, retrieval and answer is logged and auditable. Full model lifecycle control.</p></li>
-        <li class="reveal"><i class="ph ph-translate" aria-hidden="true"></i><h3>Arabic first</h3><p>Arabic and bilingual retrieval over the documents operators actually hold: reports, logs, SOPs, manuals.</p></li>
-      </ul>
-
       <table class="spec">
-        <caption>Two configurations</caption>
+        <caption>Configurations</caption>
         <thead>
           <tr>
             <th scope="col"><span class="sr-only">Specification</span></th>
@@ -190,7 +268,7 @@
             <td data-config="Performance node">13B to 70B range at full throughput</td>
           </tr>
           <tr>
-            <th scope="row">Retrieval</th>
+            <th scope="row">Retrieval corpus</th>
             <td data-config="Pilot node">Hundreds of thousands of documents</td>
             <td data-config="Performance node">Millions of documents</td>
           </tr>
@@ -200,269 +278,127 @@
             <td data-config="Performance node">100 to 300</td>
           </tr>
           <tr>
-            <th scope="row">Fit</th>
-            <td data-config="Pilot node">First OTCC pilot, ministry pilot, regulated financial proof of concept</td>
-            <td data-config="Performance node">Enterprise standard, multi site fleets</td>
+            <th scope="row">Networking</th>
+            <td data-config="Pilot node">Isolated, no outbound route</td>
+            <td data-config="Performance node">Isolated, no outbound route</td>
+          </tr>
+          <tr>
+            <th scope="row">Typical fit</th>
+            <td data-config="Pilot node">A first deployment in one department</td>
+            <td data-config="Performance node">An enterprise standard across sites</td>
           </tr>
         </tbody>
       </table>
     </div>
   </section>
 
-  <!-- 4. How it works -->
-  <section id="how-it-works" class="section" aria-labelledby="how-title">
-    <div class="container rail-grid">
-      <div class="rail-head">
-        <p class="label">How it works</p>
-        <h2 id="how-title">From delivery dock to first answer in days.</h2>
-      </div>
-
-      <div class="rail-body">
-        <ol class="rows steps">
-          <li class="reveal">
-            <span class="idx">01</span>
-            <div>
-              <h3>Deploy on premise</h3>
-              <p>Node arrives pre configured. Racked inside the OT or enterprise perimeter. No internet route is ever created.</p>
-            </div>
-          </li>
-          <li class="reveal">
-            <span class="idx">02</span>
-            <div>
-              <h3>Connect data</h3>
-              <p>Secure connectors ingest incident reports, maintenance logs, SOPs and manuals. Arabic and English, PDF and scanned.</p>
-            </div>
-          </li>
-          <li class="reveal">
-            <span class="idx">03</span>
-            <div>
-              <h3>Run models</h3>
-              <p>Sovereign LLM and Arabic retrieval serve answers to engineers through a copilot interface and internal APIs.</p>
-            </div>
-          </li>
-          <li class="reveal">
-            <span class="idx">04</span>
-            <div>
-              <h3>Enforce policy</h3>
-              <p>Role based access, retention rules and audit logging enforced at the platform layer, mapped to the controls in scope for your sector.</p>
-            </div>
-          </li>
-          <li class="reveal">
-            <span class="idx">05</span>
-            <div>
-              <h3>Monitor use</h3>
-              <p>Observability for accuracy, load and cost. Model updates delivered by physical media, never over a network.</p>
-            </div>
-          </li>
-        </ol>
-        <p class="statement">Model agnostic. Provider agnostic. Zero outside network. The customer never touches a Kubernetes manifest.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- 5. Who it is for -->
-  <section id="who" class="section section-tint" aria-labelledby="who-title">
-    <div class="container rail-grid">
-      <div class="rail-head">
-        <p class="label">Who it is for</p>
-        <h2 id="who-title">Built for the operators the cloud cannot serve.</h2>
-      </div>
-      <div class="rail-body"></div>
-    </div>
-
-    <div class="container">
-      <ol class="phases">
-        <li class="reveal">
-          <div>
-            <p class="phase">Now</p>
-            <h3>Industrial operators under isolation mandates</h3>
-          </div>
-          <p>Oil and gas, utilities, petrochemicals, rail, water. Held outside cloud AI by OTCC-1:2022. First use case: Arabic root cause analysis and incident intelligence over their own documents.</p>
-        </li>
-        <li class="reveal">
-          <div>
-            <p class="phase">Next</p>
-            <h3>Government, BFSI, healthcare</h3>
-          </div>
-          <p>Ministries and SAMA regulated institutions with data residency and audit requirements. Same node, new connectors and copilots. Delivered with system integrators and telecom channels.</p>
-        </li>
-        <li class="reveal">
-          <div>
-            <p class="phase">Then</p>
-            <h3>The GCC sovereign AI standard</h3>
-          </div>
-          <p>Multi node fleets, sovereign cloud edition, Arabic first sector models, local assembly. The Sovern node as the reference deployment unit for regulated AI in the region.</p>
-        </li>
-      </ol>
-      <p class="statement">Land with one department and one board level problem. Expand across departments. Standardise across the enterprise.</p>
-    </div>
-  </section>
-
-  <!-- 6. Why now -->
-  <section id="why-now" class="section" aria-labelledby="why-title">
-    <div class="container rail-grid">
-      <div class="rail-head sticky">
-        <p class="label">Why now</p>
-        <h2 id="why-title">Four forces converged in the last twenty four months.</h2>
-        <p class="aside">The regulation, the penalties, the model capability and the mandate all landed before an incumbent existed.</p>
-      </div>
-
-      <ol class="rows timeline">
-        <li class="reveal">
-          <time datetime="2022">2022</time>
-          <div>
-            <h3>The rule was written.</h3>
-            <p>NCA published OTCC-1:2022. Isolation became a legal requirement rather than a best practice, and residency rules across other sectors tightened in step.</p>
-          </div>
-        </li>
-        <li class="reveal">
-          <time datetime="2024-12">Dec 2024</time>
-          <div>
-            <h3>The rule got teeth.</h3>
-            <p>NCA Regulations introduced penalties up to SAR 25 million. Compliance moved from the IT budget to the board agenda.</p>
-          </div>
-        </li>
-        <li class="reveal">
-          <time datetime="2025">2025</time>
-          <div>
-            <h3>Models fit on one node.</h3>
-            <p>Open weight models with strong Arabic now run at enterprise quality on a single GPU server. The cloud stopped being technically necessary.</p>
-          </div>
-        </li>
-        <li class="reveal">
-          <time datetime="2026">2026</time>
-          <div>
-            <h3>The mandate arrived.</h3>
-            <p>Vision 2030 AI targets and the national AI strategy push every operator to show adoption. The buyer now has a deadline.</p>
-          </div>
-        </li>
-      </ol>
-    </div>
-  </section>
-
-  <!-- 7. Regulation -->
-  <section id="regulation" class="section section-dark" aria-labelledby="regulation-title">
+  <!-- Governance and compliance -->
+  <section id="compliance" class="section section-dark" aria-labelledby="compliance-title">
     <div class="lock-bleed" aria-hidden="true">
       <img src="assets/img/lock.png" alt="" width="700" height="940" loading="lazy" />
     </div>
     <div class="container rail-grid">
       <div class="rail-head">
-        <p class="label">Regulatory basis</p>
-        <h2 id="regulation-title">The rules that keep AI outside your network.</h2>
+        <p class="label">Governance</p>
+        <h2 id="compliance-title">Built to be audited, not explained away.</h2>
       </div>
 
       <div class="rail-body">
+        <ul class="controls">
+          <li class="reveal"><h3>Every request is recorded</h3><p>Prompt, retrieved documents, model version and answer, attributable to a named user and exportable for review.</p></li>
+          <li class="reveal"><h3>Access follows your directory</h3><p>Roles and groups come from the systems you already run, so permissions are reviewed where your team reviews them today.</p></li>
+          <li class="reveal"><h3>Retention is your policy</h3><p>How long prompts, answers and indexes are kept is configured with your security team, not assumed by us.</p></li>
+          <li class="reveal"><h3>Evidence is mapped</h3><p>Controls are mapped one by one to the framework that governs you, so the assessment starts from a document rather than a demonstration.</p></li>
+        </ul>
+
         <dl class="factsheet">
-          <div class="reveal"><dt>The common principle</dt><dd>Across sectors, the rules decide where data may be processed. Isolation, residency and outsourcing requirements all push sensitive workloads back inside the perimeter, whatever the model on offer.</dd></div>
-          <div class="reveal"><dt>Industrial and OT</dt><dd>NCA OTCC-1:2022 requires operational technology networks at critical national infrastructure operators to be isolated from all outside networks. Four domains, 122 sub controls. The strictest case we design for.</dd></div>
-          <div class="reveal"><dt>Enforcement</dt><dd>NCA Regulations published December 2024 (Umm al-Qura) introduce penalties up to SAR 25 million.</dd></div>
-          <div class="reveal"><dt>Government and enterprise</dt><dd>NCA Essential Cybersecurity Controls set baseline requirements for national organizations, including how sensitive systems are hosted and where data is held.</dd></div>
-          <div class="reveal"><dt>Financial services</dt><dd>SAMA frameworks govern how regulated institutions control third party access and where regulated data may be processed.</dd></div>
-          <div class="reveal"><dt>Personal data</dt><dd>The Personal Data Protection Law and its implementing regulations restrict transfer of personal data outside Saudi Arabia.</dd></div>
-          <div class="claim reveal"><dt>Our claim</dt><dd>Designed for isolation, aligned to the controls above, mapped control by control with evidence your auditor can read. We never claim approval or certification by any authority.</dd></div>
+          <div class="reveal"><dt>Why isolation matters</dt><dd>Regulated environments restrict where data may be processed. Isolation, residency and outsourcing rules decide what AI you are permitted to run, before model quality enters the discussion.</dd></div>
+          <div class="reveal"><dt>The strictest case</dt><dd>NCA OTCC-1:2022 requires operational technology networks at critical national infrastructure operators to be isolated from all outside networks. Four domains, 122 sub controls. We design to that bar.</dd></div>
+          <div class="reveal"><dt>Other frameworks</dt><dd>NCA Essential Cybersecurity Controls, SAMA frameworks for financial institutions, and the Personal Data Protection Law all constrain where sensitive data may be processed and by whom.</dd></div>
+          <div class="claim reveal"><dt>What we claim</dt><dd>The node is designed for isolation and mapped to the controls that apply to you. We never claim approval or certification by any authority.</dd></div>
         </dl>
-        <p class="sources">Primary sources: <a href="https://nca.gov.sa" rel="noopener">nca.gov.sa</a>, <a href="https://sama.gov.sa" rel="noopener">sama.gov.sa</a>, <a href="https://sdaia.gov.sa" rel="noopener">sdaia.gov.sa</a>, <a href="https://uqn.gov.sa" rel="noopener">uqn.gov.sa</a></p>
+        <p class="sources">Primary sources: <a href="https://nca.gov.sa" rel="noopener">nca.gov.sa</a>, <a href="https://sama.gov.sa" rel="noopener">sama.gov.sa</a>, <a href="https://sdaia.gov.sa" rel="noopener">sdaia.gov.sa</a></p>
       </div>
     </div>
   </section>
 
-  <!-- 8. How we compare -->
-  <section id="compare" class="section" aria-labelledby="compare-title">
+  <!-- FAQ -->
+  <section id="faq" class="section" aria-labelledby="faq-title">
     <div class="container rail-grid">
-      <div class="rail-head">
-        <p class="label">How we compare</p>
-        <h2 id="compare-title">Two questions decide this market. One quadrant wins.</h2>
-      </div>
-      <div class="rail-body">
-        <p class="lead">Does it run inside the facility? Does the provider stay accountable after delivery?</p>
-      </div>
-    </div>
-
-    <div class="container">
-      <div class="matrix">
-        <p class="axis axis-y" aria-hidden="true"><span>One off delivery</span><span>Stays accountable</span></p>
-        <div class="quadrants">
-          <article class="quad reveal">
-            <p class="quad-pos">Outside the facility · Accountable</p>
-            <dl>
-              <div><dt>National sovereign cloud</dt><dd>HUMAIN, elm</dd></div>
-              <div><dt>Global hyperscalers</dt><dd>AWS, Microsoft Azure, Google Cloud</dd></div>
-            </dl>
-            <p class="quad-note">Accountable, and outside the perimeter. Closed to any organization bound by isolation or residency rules.</p>
-          </article>
-
-          <article class="quad quad-win reveal">
-            <p class="quad-pos">Inside the facility · Accountable</p>
-            <h3>Sovern Stack by byroot</h3>
-            <p class="quad-sub">Inside the facility. Accountable after delivery.</p>
-            <ul>
-              <li>Air gapped node, zero outside network</li>
-              <li>Arabic model and retrieval on the node</li>
-              <li>Platform licence and managed services inside the perimeter</li>
-              <li>Audit evidence mapped to the controls in your framework</li>
-            </ul>
-          </article>
-
-          <article class="quad quad-empty reveal">
-            <p class="quad-pos">Outside the facility · One off delivery</p>
-            <p class="quad-note">Outside the facility, no ongoing accountability. Nothing here can serve these operators.</p>
-          </article>
-
-          <article class="quad reveal">
-            <p class="quad-pos">Inside the facility · One off delivery</p>
-            <dl>
-              <div><dt>OEM hardware vendors</dt><dd>Dell, HPE, NVIDIA</dd></div>
-              <div><dt>System integrators</dt><dd>Local and regional SIs, self build projects</dd></div>
-            </dl>
-            <p class="quad-note">Inside the perimeter. Accountability ends at handover.</p>
-          </article>
-        </div>
-        <p class="axis axis-x" aria-hidden="true"><span>Runs outside the facility</span><span>Runs inside the facility</span></p>
+      <div class="rail-head sticky">
+        <p class="label">Questions</p>
+        <h2 id="faq-title">The questions buyers ask first.</h2>
+        <p class="aside">If yours is not here, ask it directly and we will answer in writing.</p>
       </div>
 
-      <p class="statement">Platforms are kept outside the facility by law. Projects and boxes leave the risk with the customer.</p>
+      <div class="rail-body faq">
+        <details class="reveal">
+          <summary>Why not use a sovereign cloud region instead?</summary>
+          <p>A sovereign region solves where data is stored. It does not solve networks that are required to be isolated from every outside network, which is the situation many operational environments are in. When your rules allow a sovereign region, it is a reasonable option and we will say so. When they do not, the node is the way to adopt AI without asking for an exception.</p>
+        </details>
+        <details class="reveal">
+          <summary>Which models run on it, and can we bring our own?</summary>
+          <p>It ships with an Arabic first open weight model and a registry for versions. You can run other open weight models, and you can pin a version for as long as your change process requires. Model choice is yours, and swapping one does not change how governance or retrieval behave.</p>
+        </details>
+        <details class="reveal">
+          <summary>How do updates arrive if the node has no connectivity?</summary>
+          <p>On physical media, during a window you schedule, with a record of what changed. The node never calls out for updates, licences or telemetry. If you decline an update, it keeps running the version you have.</p>
+        </details>
+        <details class="reveal">
+          <summary>What happens after delivery?</summary>
+          <p>We stay responsible for the platform: health monitoring, accuracy reviews with your team, updates, and an agreed response time. This is the difference between buying a node and buying a project that ends at handover.</p>
+        </details>
+        <details class="reveal">
+          <summary>Does it work properly in Arabic?</summary>
+          <p>Arabic is the first language, not a translation layer. Retrieval handles Arabic documents including scanned paper, and answers cite the Arabic source. Mixed Arabic and English corpora are normal and supported.</p>
+        </details>
+        <details class="reveal">
+          <summary>Who is this for?</summary>
+          <p>Organizations whose rules keep sensitive data inside their own perimeter. Today that is mostly industrial operators under isolation mandates, along with government bodies, financial institutions and healthcare providers with residency and audit obligations.</p>
+        </details>
+        <details class="reveal">
+          <summary>How does an engagement start?</summary>
+          <p>A briefing, then a short scoping exercise where we map your obligations and your documents to a configuration. A pilot follows on one department and one problem, with success defined before the node arrives.</p>
+        </details>
+      </div>
     </div>
   </section>
 
-  <!-- 9. Company and team -->
+  <!-- Company -->
   <section id="company" class="section section-tint" aria-labelledby="company-title">
     <div class="container rail-grid">
       <div class="rail-head">
-        <p class="label">Company</p>
-        <h2 id="company-title">Built by systems and industry people, in Riyadh.</h2>
+        <p class="label">Who builds it</p>
+        <h2 id="company-title">Infrastructure people, based in Riyadh.</h2>
       </div>
       <div class="rail-body">
-        <p class="lead">byroot Technologies builds Sovern Stack. The company was founded by two enterprise infrastructure architects who spent their careers deploying and selling the systems regulated operators run on, in the United States and in Saudi Arabia. We are building the company in Riyadh, hiring Saudi engineers from the first year, and keeping the product, the audit evidence and the reference deployments in the Kingdom.</p>
+        <p class="lead">byroot Technologies builds Sovern Stack. We come from enterprise infrastructure and have spent our careers delivering the systems regulated organizations depend on, in the United States and in Saudi Arabia.</p>
+
+        <ul class="team">
+          <li class="reveal">
+            <h3>Systems people</h3>
+            <p>Networks, data centres and platforms. The node is engineered the way that equipment is engineered, to be racked, supported and audited.</p>
+          </li>
+          <li class="reveal">
+            <h3>Industry people</h3>
+            <p>Delivery across oil and gas, banking, utilities, telecom and government, so the product fits how those environments buy, operate and prove compliance.</p>
+          </li>
+          <li class="reveal">
+            <h3>Here, not visiting</h3>
+            <p>The company, the product, the audit evidence and the reference deployments stay in the Kingdom, with Saudi engineers hired from the first year.</p>
+          </li>
+        </ul>
       </div>
-    </div>
-
-    <div class="container">
-      <ul class="team">
-        <li class="reveal">
-          <h3>Systems people</h3>
-          <p>We come from enterprise infrastructure: networks, data centres and the platforms regulated organizations already run on. The node is engineered the way that equipment is engineered, to be racked, supported and audited.</p>
-        </li>
-        <li class="reveal">
-          <h3>Industry people</h3>
-          <p>We have delivered into oil and gas, banking, utilities, telecom and government, in the United States and in Saudi Arabia. We design for how those environments actually buy, operate and prove compliance.</p>
-        </li>
-        <li class="reveal">
-          <h3>Here, not visiting</h3>
-          <p>The company, the product, the audit evidence and the reference deployments stay in the Kingdom, with Saudi engineers hired from the first year.</p>
-        </li>
-      </ul>
-
-      <p class="note reveal">We are hiring a founding AI platform engineer in Riyadh. If you have shipped model serving or retrieval systems on constrained hardware, <a href="mailto:contact@byroot.co">write to us</a>.</p>
     </div>
   </section>
 
-  <!-- 10. Contact -->
+  <!-- Contact -->
   <section id="contact" class="section" aria-labelledby="contact-title">
     <div class="container contact-grid">
       <div>
         <p class="label">Contact</p>
-        <h2 id="contact-title">Sovereign by design. Built in Riyadh.</h2>
-        <p class="lead">The operators who cannot use the cloud will still adopt AI. We are building the node they adopt it on. Request a briefing or a pilot conversation.</p>
+        <h2 id="contact-title">Ask us a hard question.</h2>
+        <p class="lead">Tell us what you need to run and what your rules allow. If the node is not the right answer, we will tell you that too.</p>
         <ul class="contact-details">
           <li><i class="ph ph-envelope-simple" aria-hidden="true"></i><a href="mailto:contact@byroot.co">contact@byroot.co</a></li>
           <li><i class="ph ph-map-pin" aria-hidden="true"></i><span>Riyadh, Saudi Arabia</span></li>
@@ -484,7 +420,7 @@
         <div class="field">
           <label for="message">Message</label>
           <textarea id="message" name="message" rows="5" required aria-describedby="message-hint message-error"></textarea>
-          <p class="field-hint" id="message-hint">Your use case, constraints and timeline. Please leave out links.</p>
+          <p class="field-hint" id="message-hint">Your environment, your constraints and what you want it to read. Please leave out links.</p>
           <p class="field-error" id="message-error" role="alert"></p>
         </div>
 
@@ -504,14 +440,16 @@
   <div class="container footer-top">
     <div class="footer-brand">
       <img src="assets/byroot_logo_trans.png" alt="byroot" width="96" height="32" loading="lazy" />
-      <p>Sovern Stack is a pre integrated, air gapped AI node for regulated Saudi operators.</p>
+      <p>Sovern Stack is an air gapped AI node for organizations that keep sensitive data inside their own network.</p>
     </div>
     <nav aria-label="Footer">
       <ul class="footer-links">
         <li><a href="#product">Product</a></li>
-        <li><a href="#how-it-works">How it works</a></li>
-        <li><a href="#regulation">Regulation</a></li>
-        <li><a href="#compare">How we compare</a></li>
+        <li><a href="#work">Use cases</a></li>
+        <li><a href="#deployment">Deployment</a></li>
+        <li><a href="#specs">Specifications</a></li>
+        <li><a href="#compliance">Governance</a></li>
+        <li><a href="#faq">FAQ</a></li>
         <li><a href="#company">Company</a></li>
         <li><a href="mailto:contact@byroot.co">contact@byroot.co</a></li>
       </ul>
@@ -534,11 +472,11 @@
         entries.forEach(function (e) {
           if (!e.isIntersecting) return;
           var order = Array.prototype.slice.call(e.target.parentElement.children).indexOf(e.target);
-          e.target.style.transitionDelay = Math.min(order, 5) * 70 + 'ms';
+          e.target.style.transitionDelay = Math.min(order, 5) * 60 + 'ms';
           e.target.classList.add('in');
           io.unobserve(e.target);
         });
-      }, { threshold: 0.12, rootMargin: '0px 0px -48px 0px' });
+      }, { threshold: 0.1, rootMargin: '0px 0px -48px 0px' });
       items.forEach(function (el) { io.observe(el); });
     }
 
