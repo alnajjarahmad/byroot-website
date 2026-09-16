@@ -1,130 +1,585 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>byroot Technologies</title>
-  <link rel="stylesheet" href="style.css" />
-  <style>
-    @font-face {
-  font-family: 'Glass TTY VT220 Custom';
-  src: url('assets/glass_tty_vt220_local.ttf') format('truetype');
-  }
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>byroot Technologies · Sovern Stack, sovereign AI infrastructure for regulated Saudi operators</title>
+  <meta name="description" content="A pre integrated, air gapped AI node for regulated environments in Saudi Arabia. Arabic first models, retrieval and governance inside your perimeter, deployed in days." />
+  <link rel="canonical" href="https://byroot.co/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://byroot.co/" />
+  <meta property="og:title" content="byroot Technologies · Sovern Stack" />
+  <meta property="og:description" content="A pre integrated, air gapped AI node for regulated environments in Saudi Arabia. Arabic first models, retrieval and governance inside your perimeter, deployed in days." />
+  <meta property="og:image" content="https://byroot.co/assets/og.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="theme-color" content="#12171C" />
+  <link rel="icon" type="image/png" href="assets/byroot_logo_trans.png" />
 
-  @font-face {
-  font-family: 'Glass TTY VT220';
-  src: url('https://cdn.jsdelivr.net/gh/ahmadbyroot/terminal-fonts@main/Glass_TTY_VT220.ttf') format('truetype');
-  }
-  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css" />
+  <link rel="stylesheet" href="style.css?v=4" />
+  <script>document.documentElement.classList.add('js');</script>
 </head>
 <body>
-<div id="loading-overlay">
-  <div class="loader">Loading...</div>
-</div>
-<script>
-  window.addEventListener('load', () => {
-    document.getElementById('loading-overlay').style.display = 'none';
-  });
-</script>
+<div class="grain" aria-hidden="true"></div>
+<a class="skip-link" href="#main">Skip to content</a>
 
-<header>
-  <div class="hero">
-    <img src="assets/byroot_logo_trans.png" data-aos="zoom-in" alt="byroot logo" class="logo"/>
-    <h1 class="hero-text" data-aos="fade-up"><span class="typed-text"></span></h1>
-    <p class="subtext">Independent AI Infrastructure Architecture.</p>
+<header class="site-nav">
+  <div class="container nav-inner">
+    <a href="/" class="brand" aria-label="byroot home">
+      <img src="assets/byroot_logo_trans.png" alt="byroot" width="96" height="32" />
+    </a>
+    <nav aria-label="Primary">
+      <ul class="nav-links">
+        <li><a href="#product">Product</a></li>
+        <li><a href="#how-it-works">How it works</a></li>
+        <li><a href="#who">Who it is for</a></li>
+        <li><a href="#regulation">Regulation</a></li>
+        <li><a href="#company">Company</a></li>
+      </ul>
+    </nav>
+    <a href="#contact" class="btn btn-primary btn-sm">Request a briefing</a>
   </div>
 </header>
 
-<section class="features" data-aos="fade-up">
-  <h2>Our Offerings</h2>
-  <div class="grid">
-    <div class="card"><h3>Pulse</h3><p>Real-time AI observability across your entire stack.</p></div>
-    <div class="card"><h3>Arc</h3><p>Smart workload optimization for AI/ML in cloud environments.</p></div>
-    <div class="card"><h3>Incident Intelligence</h3><p>Turn alerts into insights using large language models.</p></div>
-    <div class="card"><h3>Cloud FinOps</h3><p>Balance performance and cost with AI-driven recommendations.</p></div>
+<main id="main">
+
+  <!-- 1. Hero -->
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="hero-bleed" aria-hidden="true">
+      <img src="assets/img/racks.png" alt="" width="1004" height="1080" fetchpriority="high" />
+    </div>
+    <div class="container hero-inner">
+      <p class="label" style="--i: 0">Sovereign · Deployable · Governed</p>
+      <h1 id="hero-title" style="--i: 1">Sovereign AI infrastructure for the enterprises that cannot use the cloud.</h1>
+      <p class="hero-sub" style="--i: 2">Sovern Stack is a pre integrated, air gapped AI node for regulated environments. Deployed in days, inside your perimeter, mapped to the controls your auditor tests.</p>
+      <div class="hero-actions" style="--i: 3">
+        <a href="#contact" class="btn btn-primary">Request a briefing</a>
+        <a href="#how-it-works" class="btn btn-quiet">See how it works <i class="ph ph-arrow-right" aria-hidden="true"></i></a>
+      </div>
+      <p class="hero-meta" style="--i: 4">byroot Technologies · Riyadh, Saudi Arabia</p>
+    </div>
+  </section>
+
+  <!-- Facts -->
+  <section class="facts" aria-label="At a glance">
+    <dl class="container facts-grid">
+      <div><dt>Control mapping</dt><dd>Evidence ready</dd><p>Mapped to the isolation and residency controls in your framework</p></div>
+      <div><dt>Outside connections</dt><dd>Zero</dd><p>No internet route is ever created on the node</p></div>
+      <div><dt>Delivery dock to first answer</dt><dd>Days</dd><p>Not months of platform engineering</p></div>
+      <div><dt>Language</dt><dd>Arabic first</dd><p>Models and retrieval run on the node itself</p></div>
+    </dl>
+  </section>
+
+  <!-- 2. The problem -->
+  <section id="problem" class="section" aria-labelledby="problem-title">
+    <div class="container rail-grid">
+      <div class="rail-head">
+        <p class="label">The problem</p>
+        <h2 id="problem-title">Regulated operators want AI inside their networks. Three walls stop them.</h2>
+      </div>
+
+      <div class="rail-body">
+        <p class="lead">In regulated environments, the rules decide where data may be processed long before anyone compares models. Isolation mandates, residency requirements and outsourcing rules all point the same way: sensitive data stays inside the perimeter. The strictest case is NCA OTCC-1:2022, which requires operational technology networks to be isolated from all outside networks. Not just the public internet. Not just foreign clouds. Every outside network, including sovereign clouds inside Saudi Arabia.</p>
+        <p class="lead">Those rules remove every cloud AI vendor, local or global, from the buying conversation. The organizations still have the mandate to adopt AI. Nobody has built the product that fits inside the rule.</p>
+
+        <ol class="rows walls">
+          <li class="reveal">
+            <span class="idx">01</span>
+            <div>
+              <h3>The regulatory wall</h3>
+              <p>Isolation and residency rules place sensitive workloads out of reach of cloud AI. OTCC-1:2022 is the sharpest case, with four domains, 122 sub controls and penalties up to SAR 25 million under the NCA Regulations of December 2024. Banking, government and healthcare rules point the same way.</p>
+            </div>
+          </li>
+          <li class="reveal">
+            <span class="idx">02</span>
+            <div>
+              <h3>The integration wall</h3>
+              <p>Private AI means GPU servers, model serving, vector search, Arabic retrieval, audit logging and observability. Assembled by hand, this takes months and specialist teams the operators do not have.</p>
+            </div>
+          </li>
+          <li class="reveal">
+            <span class="idx">03</span>
+            <div>
+              <h3>The talent wall</h3>
+              <p>AI infrastructure engineers are scarce in the Kingdom and expensive everywhere. No organization wants to staff a platform team for one department's pilot.</p>
+            </div>
+          </li>
+        </ol>
+
+        <p class="note reveal"><strong>Net effect.</strong> AI adoption in Saudi critical infrastructure is stalled at the deployment step, not the ambition step. The budget exists. The mandate exists. The deployable product does not.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. The product -->
+  <section id="product" class="section section-tint" aria-labelledby="product-title">
+    <div class="container rail-grid">
+      <div class="rail-head">
+        <p class="label">The product</p>
+        <h2 id="product-title">Sovern Stack: a pre integrated sovereign AI node.</h2>
+      </div>
+      <div class="rail-body">
+        <p class="lead">One installation, full AI readiness. Hardware, models, retrieval, governance and observability ship as one tested system, inside the customer's perimeter, with zero outside connectivity. The same node serves an air gapped plant network and a regulated head office.</p>
+      </div>
+    </div>
+
+    <div class="container product-grid">
+      <div class="architecture reveal">
+        <p class="arch-caption">Reference architecture, top to bottom</p>
+        <ol class="layers">
+          <li>
+            <span class="layer-name">Applications</span>
+            <span class="layer-detail">Copilots · Document intelligence · Root cause analysis · Secure APIs</span>
+          </li>
+          <li>
+            <span class="layer-name">Models</span>
+            <span class="layer-detail">Llama based sovereign LLM · Fine tuned Arabic · Model registry</span>
+          </li>
+          <li>
+            <span class="layer-name">Data layer</span>
+            <span class="layer-detail">Vector DB · Arabic RAG pipelines · Secure connectors</span>
+          </li>
+          <li>
+            <span class="layer-name">AI platform</span>
+            <span class="layer-detail">Kubernetes · Model serving · GPU scheduling</span>
+          </li>
+          <li class="layer-base">
+            <span class="layer-name">Sovereign node</span>
+            <span class="layer-detail">NVIDIA L4 or dual L40S · NVMe · Isolated networking</span>
+          </li>
+        </ol>
+        <p class="rail-note">Governance, audit and observability run across every layer</p>
+      </div>
+
+      <figure class="node-frame reveal">
+        <img src="assets/img/node.png" alt="The Sovern node, a single rack mountable AI appliance" width="620" height="690" loading="lazy" />
+      </figure>
+    </div>
+
+    <div class="container">
+      <ul class="properties">
+        <li class="reveal"><i class="ph ph-vault" aria-hidden="true"></i><h3>Sovereign</h3><p>Data never leaves the facility. Air gapped by design, mapped control by control to the framework that governs you.</p></li>
+        <li class="reveal"><i class="ph ph-package" aria-hidden="true"></i><h3>Simple</h3><p>Pre integrated hardware and software. Days to first answer, not months of platform engineering.</p></li>
+        <li class="reveal"><i class="ph ph-list-checks" aria-hidden="true"></i><h3>Governed</h3><p>Every prompt, retrieval and answer is logged and auditable. Full model lifecycle control.</p></li>
+        <li class="reveal"><i class="ph ph-translate" aria-hidden="true"></i><h3>Arabic first</h3><p>Arabic and bilingual retrieval over the documents operators actually hold: reports, logs, SOPs, manuals.</p></li>
+      </ul>
+
+      <table class="spec">
+        <caption>Two configurations</caption>
+        <thead>
+          <tr>
+            <th scope="col"><span class="sr-only">Specification</span></th>
+            <th scope="col">Pilot node <span>Department scale</span></th>
+            <th scope="col">Performance node <span>Multi department scale</span></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Compute</th>
+            <td data-config="Pilot node">One NVIDIA L4 class GPU</td>
+            <td data-config="Performance node">Dual NVIDIA L40S class GPUs</td>
+          </tr>
+          <tr>
+            <th scope="row">Models</th>
+            <td data-config="Pilot node">7B to 13B range with Arabic fine tuning</td>
+            <td data-config="Performance node">13B to 70B range at full throughput</td>
+          </tr>
+          <tr>
+            <th scope="row">Retrieval</th>
+            <td data-config="Pilot node">Hundreds of thousands of documents</td>
+            <td data-config="Performance node">Millions of documents</td>
+          </tr>
+          <tr>
+            <th scope="row">Concurrent users</th>
+            <td data-config="Pilot node">20 to 50</td>
+            <td data-config="Performance node">100 to 300</td>
+          </tr>
+          <tr>
+            <th scope="row">Fit</th>
+            <td data-config="Pilot node">First OTCC pilot, ministry pilot, regulated financial proof of concept</td>
+            <td data-config="Performance node">Enterprise standard, multi site fleets</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- 4. How it works -->
+  <section id="how-it-works" class="section" aria-labelledby="how-title">
+    <div class="container rail-grid">
+      <div class="rail-head">
+        <p class="label">How it works</p>
+        <h2 id="how-title">From delivery dock to first answer in days.</h2>
+      </div>
+
+      <div class="rail-body">
+        <ol class="rows steps">
+          <li class="reveal">
+            <span class="idx">01</span>
+            <div>
+              <h3>Deploy on premise</h3>
+              <p>Node arrives pre configured. Racked inside the OT or enterprise perimeter. No internet route is ever created.</p>
+            </div>
+          </li>
+          <li class="reveal">
+            <span class="idx">02</span>
+            <div>
+              <h3>Connect data</h3>
+              <p>Secure connectors ingest incident reports, maintenance logs, SOPs and manuals. Arabic and English, PDF and scanned.</p>
+            </div>
+          </li>
+          <li class="reveal">
+            <span class="idx">03</span>
+            <div>
+              <h3>Run models</h3>
+              <p>Sovereign LLM and Arabic retrieval serve answers to engineers through a copilot interface and internal APIs.</p>
+            </div>
+          </li>
+          <li class="reveal">
+            <span class="idx">04</span>
+            <div>
+              <h3>Enforce policy</h3>
+              <p>Role based access, retention rules and audit logging enforced at the platform layer, mapped to the controls in scope for your sector.</p>
+            </div>
+          </li>
+          <li class="reveal">
+            <span class="idx">05</span>
+            <div>
+              <h3>Monitor use</h3>
+              <p>Observability for accuracy, load and cost. Model updates delivered by physical media, never over a network.</p>
+            </div>
+          </li>
+        </ol>
+        <p class="statement">Model agnostic. Provider agnostic. Zero outside network. The customer never touches a Kubernetes manifest.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. Who it is for -->
+  <section id="who" class="section section-tint" aria-labelledby="who-title">
+    <div class="container rail-grid">
+      <div class="rail-head">
+        <p class="label">Who it is for</p>
+        <h2 id="who-title">Built for the operators the cloud cannot serve.</h2>
+      </div>
+      <div class="rail-body"></div>
+    </div>
+
+    <div class="container">
+      <ol class="phases">
+        <li class="reveal">
+          <div>
+            <p class="phase">Now</p>
+            <h3>Industrial operators under isolation mandates</h3>
+          </div>
+          <p>Oil and gas, utilities, petrochemicals, rail, water. Held outside cloud AI by OTCC-1:2022. First use case: Arabic root cause analysis and incident intelligence over their own documents.</p>
+        </li>
+        <li class="reveal">
+          <div>
+            <p class="phase">Next</p>
+            <h3>Government, BFSI, healthcare</h3>
+          </div>
+          <p>Ministries and SAMA regulated institutions with data residency and audit requirements. Same node, new connectors and copilots. Delivered with system integrators and telecom channels.</p>
+        </li>
+        <li class="reveal">
+          <div>
+            <p class="phase">Then</p>
+            <h3>The GCC sovereign AI standard</h3>
+          </div>
+          <p>Multi node fleets, sovereign cloud edition, Arabic first sector models, local assembly. The Sovern node as the reference deployment unit for regulated AI in the region.</p>
+        </li>
+      </ol>
+      <p class="statement">Land with one department and one board level problem. Expand across departments. Standardise across the enterprise.</p>
+    </div>
+  </section>
+
+  <!-- 6. Why now -->
+  <section id="why-now" class="section" aria-labelledby="why-title">
+    <div class="container rail-grid">
+      <div class="rail-head sticky">
+        <p class="label">Why now</p>
+        <h2 id="why-title">Four forces converged in the last twenty four months.</h2>
+        <p class="aside">The regulation, the penalties, the model capability and the mandate all landed before an incumbent existed.</p>
+      </div>
+
+      <ol class="rows timeline">
+        <li class="reveal">
+          <time datetime="2022">2022</time>
+          <div>
+            <h3>The rule was written.</h3>
+            <p>NCA published OTCC-1:2022. Isolation became a legal requirement rather than a best practice, and residency rules across other sectors tightened in step.</p>
+          </div>
+        </li>
+        <li class="reveal">
+          <time datetime="2024-12">Dec 2024</time>
+          <div>
+            <h3>The rule got teeth.</h3>
+            <p>NCA Regulations introduced penalties up to SAR 25 million. Compliance moved from the IT budget to the board agenda.</p>
+          </div>
+        </li>
+        <li class="reveal">
+          <time datetime="2025">2025</time>
+          <div>
+            <h3>Models fit on one node.</h3>
+            <p>Open weight models with strong Arabic now run at enterprise quality on a single GPU server. The cloud stopped being technically necessary.</p>
+          </div>
+        </li>
+        <li class="reveal">
+          <time datetime="2026">2026</time>
+          <div>
+            <h3>The mandate arrived.</h3>
+            <p>Vision 2030 AI targets and the national AI strategy push every operator to show adoption. The buyer now has a deadline.</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- 7. Regulation -->
+  <section id="regulation" class="section section-dark" aria-labelledby="regulation-title">
+    <div class="lock-bleed" aria-hidden="true">
+      <img src="assets/img/lock.png" alt="" width="700" height="940" loading="lazy" />
+    </div>
+    <div class="container rail-grid">
+      <div class="rail-head">
+        <p class="label">Regulatory basis</p>
+        <h2 id="regulation-title">The rules that keep AI outside your network.</h2>
+      </div>
+
+      <div class="rail-body">
+        <dl class="factsheet">
+          <div class="reveal"><dt>The common principle</dt><dd>Across sectors, the rules decide where data may be processed. Isolation, residency and outsourcing requirements all push sensitive workloads back inside the perimeter, whatever the model on offer.</dd></div>
+          <div class="reveal"><dt>Industrial and OT</dt><dd>NCA OTCC-1:2022 requires operational technology networks at critical national infrastructure operators to be isolated from all outside networks. Four domains, 122 sub controls. The strictest case we design for.</dd></div>
+          <div class="reveal"><dt>Enforcement</dt><dd>NCA Regulations published December 2024 (Umm al-Qura) introduce penalties up to SAR 25 million.</dd></div>
+          <div class="reveal"><dt>Government and enterprise</dt><dd>NCA Essential Cybersecurity Controls set baseline requirements for national organizations, including how sensitive systems are hosted and where data is held.</dd></div>
+          <div class="reveal"><dt>Financial services</dt><dd>SAMA frameworks govern how regulated institutions control third party access and where regulated data may be processed.</dd></div>
+          <div class="reveal"><dt>Personal data</dt><dd>The Personal Data Protection Law and its implementing regulations restrict transfer of personal data outside Saudi Arabia.</dd></div>
+          <div class="claim reveal"><dt>Our claim</dt><dd>Designed for isolation, aligned to the controls above, mapped control by control with evidence your auditor can read. We never claim approval or certification by any authority.</dd></div>
+        </dl>
+        <p class="sources">Primary sources: <a href="https://nca.gov.sa" rel="noopener">nca.gov.sa</a>, <a href="https://sama.gov.sa" rel="noopener">sama.gov.sa</a>, <a href="https://sdaia.gov.sa" rel="noopener">sdaia.gov.sa</a>, <a href="https://uqn.gov.sa" rel="noopener">uqn.gov.sa</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. How we compare -->
+  <section id="compare" class="section" aria-labelledby="compare-title">
+    <div class="container rail-grid">
+      <div class="rail-head">
+        <p class="label">How we compare</p>
+        <h2 id="compare-title">Two questions decide this market. One quadrant wins.</h2>
+      </div>
+      <div class="rail-body">
+        <p class="lead">Does it run inside the facility? Does the provider stay accountable after delivery?</p>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="matrix">
+        <p class="axis axis-y" aria-hidden="true"><span>One off delivery</span><span>Stays accountable</span></p>
+        <div class="quadrants">
+          <article class="quad reveal">
+            <p class="quad-pos">Outside the facility · Accountable</p>
+            <dl>
+              <div><dt>National sovereign cloud</dt><dd>HUMAIN, elm</dd></div>
+              <div><dt>Global hyperscalers</dt><dd>AWS, Microsoft Azure, Google Cloud</dd></div>
+            </dl>
+            <p class="quad-note">Accountable, and outside the perimeter. Closed to any organization bound by isolation or residency rules.</p>
+          </article>
+
+          <article class="quad quad-win reveal">
+            <p class="quad-pos">Inside the facility · Accountable</p>
+            <h3>Sovern Stack by byroot</h3>
+            <p class="quad-sub">Inside the facility. Accountable after delivery.</p>
+            <ul>
+              <li>Air gapped node, zero outside network</li>
+              <li>Arabic model and retrieval on the node</li>
+              <li>Platform licence and managed services inside the perimeter</li>
+              <li>Audit evidence mapped to the controls in your framework</li>
+            </ul>
+          </article>
+
+          <article class="quad quad-empty reveal">
+            <p class="quad-pos">Outside the facility · One off delivery</p>
+            <p class="quad-note">Outside the facility, no ongoing accountability. Nothing here can serve these operators.</p>
+          </article>
+
+          <article class="quad reveal">
+            <p class="quad-pos">Inside the facility · One off delivery</p>
+            <dl>
+              <div><dt>OEM hardware vendors</dt><dd>Dell, HPE, NVIDIA</dd></div>
+              <div><dt>System integrators</dt><dd>Local and regional SIs, self build projects</dd></div>
+            </dl>
+            <p class="quad-note">Inside the perimeter. Accountability ends at handover.</p>
+          </article>
+        </div>
+        <p class="axis axis-x" aria-hidden="true"><span>Runs outside the facility</span><span>Runs inside the facility</span></p>
+      </div>
+
+      <p class="statement">Platforms are kept outside the facility by law. Projects and boxes leave the risk with the customer.</p>
+    </div>
+  </section>
+
+  <!-- 9. Company and team -->
+  <section id="company" class="section section-tint" aria-labelledby="company-title">
+    <div class="container rail-grid">
+      <div class="rail-head">
+        <p class="label">Company</p>
+        <h2 id="company-title">Built by systems and industry people, in Riyadh.</h2>
+      </div>
+      <div class="rail-body">
+        <p class="lead">byroot Technologies builds Sovern Stack. The company was founded by two enterprise infrastructure architects who spent their careers deploying and selling the systems regulated operators run on, in the United States and in Saudi Arabia. We are building the company in Riyadh, hiring Saudi engineers from the first year, and keeping the product, the audit evidence and the reference deployments in the Kingdom.</p>
+      </div>
+    </div>
+
+    <div class="container">
+      <ul class="team">
+        <li class="reveal">
+          <h3>Systems people</h3>
+          <p>We come from enterprise infrastructure: networks, data centres and the platforms regulated organizations already run on. The node is engineered the way that equipment is engineered, to be racked, supported and audited.</p>
+        </li>
+        <li class="reveal">
+          <h3>Industry people</h3>
+          <p>We have delivered into oil and gas, banking, utilities, telecom and government, in the United States and in Saudi Arabia. We design for how those environments actually buy, operate and prove compliance.</p>
+        </li>
+        <li class="reveal">
+          <h3>Here, not visiting</h3>
+          <p>The company, the product, the audit evidence and the reference deployments stay in the Kingdom, with Saudi engineers hired from the first year.</p>
+        </li>
+      </ul>
+
+      <p class="note reveal">We are hiring a founding AI platform engineer in Riyadh. If you have shipped model serving or retrieval systems on constrained hardware, <a href="mailto:contact@byroot.co">write to us</a>.</p>
+    </div>
+  </section>
+
+  <!-- 10. Contact -->
+  <section id="contact" class="section" aria-labelledby="contact-title">
+    <div class="container contact-grid">
+      <div>
+        <p class="label">Contact</p>
+        <h2 id="contact-title">Sovereign by design. Built in Riyadh.</h2>
+        <p class="lead">The operators who cannot use the cloud will still adopt AI. We are building the node they adopt it on. Request a briefing or a pilot conversation.</p>
+        <ul class="contact-details">
+          <li><i class="ph ph-envelope-simple" aria-hidden="true"></i><a href="mailto:contact@byroot.co">contact@byroot.co</a></li>
+          <li><i class="ph ph-map-pin" aria-hidden="true"></i><span>Riyadh, Saudi Arabia</span></li>
+          <li><i class="ph ph-clock-counter-clockwise" aria-hidden="true"></i><span>We reply within 48 hours</span></li>
+        </ul>
+      </div>
+
+      <form class="contact-form" id="contactForm" method="POST" action="https://byroot-contact-worker.alnajjarahmad.workers.dev/submit" novalidate>
+        <div class="field">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" autocomplete="name" required aria-describedby="name-error" />
+          <p class="field-error" id="name-error" role="alert"></p>
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" autocomplete="email" required aria-describedby="email-error" />
+          <p class="field-error" id="email-error" role="alert"></p>
+        </div>
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required aria-describedby="message-hint message-error"></textarea>
+          <p class="field-hint" id="message-hint">Your use case, constraints and timeline. Please leave out links.</p>
+          <p class="field-error" id="message-error" role="alert"></p>
+        </div>
+
+        <div class="hp" aria-hidden="true">
+          <label for="website">Website</label>
+          <input type="text" id="website" name="website" tabindex="-1" autocomplete="off" />
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-block" id="submitBtn">Request a briefing</button>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-top">
+    <div class="footer-brand">
+      <img src="assets/byroot_logo_trans.png" alt="byroot" width="96" height="32" loading="lazy" />
+      <p>Sovern Stack is a pre integrated, air gapped AI node for regulated Saudi operators.</p>
+    </div>
+    <nav aria-label="Footer">
+      <ul class="footer-links">
+        <li><a href="#product">Product</a></li>
+        <li><a href="#how-it-works">How it works</a></li>
+        <li><a href="#regulation">Regulation</a></li>
+        <li><a href="#compare">How we compare</a></li>
+        <li><a href="#company">Company</a></li>
+        <li><a href="mailto:contact@byroot.co">contact@byroot.co</a></li>
+      </ul>
+    </nav>
   </div>
-</section>
-
-<section class="about" data-aos="fade-left">
-  <h2>About byroot</h2>
-  <p><strong>byroot</strong> is an independent AI infrastructure architecture firm, based in the Kingdom of Saudi Arabia.</p>
-  <p>We exist because in sovereign and regulated environments, AI infrastructure decisions are often made under time pressure, vendor influence, or incomplete accountability — and once deployed, these decisions are expensive and difficult to reverse.</p>
-  <p>Our role is to step in before procurement begins and define how AI platforms should be built, governed, and sustained over the long term.</p>
-   </section>
-
-   <section class="about" data-aos="fade-left">
-  <h2>What We Do</h2>
-  <ul>
-    <li>Define reference architectures for sovereign and regulated AI deployments</li>
-    <li>Issue independent architecture and sovereignty sign‑off</li>
-    <li>Identify vendor lock‑in, cost traps, and irreversible design risks</li>
-    <li>Design for ownership, upgrade paths, and long‑term defensibility</li>
-  </ul>
-  <p>We exit before implementation begins.</p>
-</section>
-
-<section class="about" data-aos="fade-left">
-  <h2>When byroot Is Engaged</h2>
-  <p><strong>byroot</strong> is typically engaged when an AI deployment is:</p>
-  <ul>
-    <li>Sovereign or nationally sensitive</li>
-    <li>Regulated</li>
-    <li>Intended to be long‑lived infrastructure</li>
-    <li>Larger than a single GPU node</li>
-  </ul>
-  <p>In these environments, architecture must be validated independently and not by vendors or delivery partners.</p>
-</section>
-
-<section class="contact" data-aos="fade-right">
-  <h2>Contact Us</h2>
-  <form class="contact-form" method="POST" action="https://byroot-contact-worker.alnajjarahmad.workers.dev/submit">
-    <label for="name">Name:</label>
-    <input type="text" id="name" name="name" required />
-  
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email" required />
-  
-    <label for="message">Message:</label>
-    <textarea id="message" name="message" required></textarea>
-    
-    <!-- 🕵️ Honeypot (anti-bot field, invisible to real users) -->
-    <input type="text" name="website" style="display:none;" tabindex="-1" autocomplete="off">
-
-    <button type="submit">Send</button>
-  </form>
-  
-</section>
-
-<footer>
-  <p>&copy; 2025 byroot Technologies. All rights reserved.</p>
+  <div class="container footer-bottom">
+    <p>&copy; 2026 byroot Technologies. Sovern Stack is a product of byroot Technologies. Riyadh, Saudi Arabia.</p>
+  </div>
 </footer>
 
 <script>
-  const text = "reimagining AI Infrastrcture for the Saudi Market_";
-  const target = document.querySelector(".typed-text");
-  let index = 0;
-  function typeText() {
-    if (index < text.length) {
-      target.innerHTML += text.charAt(index);
-      index++;
-      setTimeout(typeText, 60);
+  (function () {
+    var items = document.querySelectorAll('.reveal');
+    var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    if (reduce || !('IntersectionObserver' in window)) {
+      items.forEach(function (el) { el.classList.add('in'); });
     } else {
-      blinkCursor();
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) {
+          if (!e.isIntersecting) return;
+          var order = Array.prototype.slice.call(e.target.parentElement.children).indexOf(e.target);
+          e.target.style.transitionDelay = Math.min(order, 5) * 70 + 'ms';
+          e.target.classList.add('in');
+          io.unobserve(e.target);
+        });
+      }, { threshold: 0.12, rootMargin: '0px 0px -48px 0px' });
+      items.forEach(function (el) { io.observe(el); });
     }
-  }
-  function blinkCursor() {
-    setInterval(() => {
-      target.innerHTML = target.innerHTML.endsWith('_')
-        ? target.innerHTML.slice(0, -1)
-        : target.innerHTML + '_';
-    }, 500);
-  }
-  document.addEventListener("DOMContentLoaded", typeText);
-</script>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-  AOS.init();
+
+    var form = document.getElementById('contactForm');
+    var btn = document.getElementById('submitBtn');
+    var emailRe = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    function setError(field, msg) {
+      document.getElementById(field.id + '-error').textContent = msg;
+      field.setAttribute('aria-invalid', msg ? 'true' : 'false');
+    }
+
+    function check(field) {
+      var v = field.value.trim();
+      if (!v) return setError(field, 'This field is required.'), false;
+      if (field.type === 'email' && !emailRe.test(v)) return setError(field, 'Enter a valid email address.'), false;
+      if (field.id === 'message' && v.length < 10) return setError(field, 'Please add a little more detail.'), false;
+      if (field.id === 'message' && /https?:|www\./i.test(v)) return setError(field, 'Please remove links from your message.'), false;
+      setError(field, '');
+      return true;
+    }
+
+    form.querySelectorAll('[required]').forEach(function (f) {
+      f.addEventListener('blur', function () { if (f.value) check(f); });
+    });
+
+    form.addEventListener('submit', function (e) {
+      var firstInvalid = null;
+      form.querySelectorAll('[required]').forEach(function (f) {
+        if (!check(f) && !firstInvalid) firstInvalid = f;
+      });
+      if (firstInvalid) { e.preventDefault(); firstInvalid.focus(); return; }
+      btn.disabled = true;
+      btn.textContent = 'Sending';
+    });
+
+    window.addEventListener('pageshow', function () {
+      btn.disabled = false;
+      btn.textContent = 'Request a briefing';
+    });
+  })();
 </script>
 </body>
 </html>
