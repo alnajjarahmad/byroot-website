@@ -21,7 +21,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css" />
-  <link rel="stylesheet" href="style.css?v=5" />
+  <link rel="stylesheet" href="style.css?v=6" />
   <script>document.documentElement.classList.add('js');</script>
 </head>
 <body>
@@ -38,7 +38,6 @@
         <li><a href="#product">Product</a></li>
         <li><a href="#work">Use cases</a></li>
         <li><a href="#deployment">Deployment</a></li>
-        <li><a href="#specs">Specifications</a></li>
         <li><a href="#compliance">Governance</a></li>
         <li><a href="#faq">FAQ</a></li>
       </ul>
@@ -126,6 +125,10 @@
         <img src="assets/img/node.png" alt="The Sovern node, a rack mountable AI appliance" width="620" height="690" loading="lazy" />
         <figcaption>The node, installed in your own rack</figcaption>
       </figure>
+    </div>
+
+    <div class="container">
+      <p class="sizing reveal"><span>Sizing</span>There is no single box. Configurations run from a DG10 class unit small enough to sit beside a desk, through full standalone systems, up to several nodes stacked and networked together when one stops being enough. We size it with you, against what you need it to read and how many people will use it.</p>
     </div>
   </section>
 
@@ -231,64 +234,6 @@
           <div><dt>Ownership</dt><dd>The hardware, the data and the logs are yours. We stay accountable for the platform after delivery.</dd></div>
         </dl>
       </div>
-    </div>
-  </section>
-
-  <!-- Specifications -->
-  <section id="specs" class="section section-tint" aria-labelledby="specs-title">
-    <div class="container rail-grid">
-      <div class="rail-head">
-        <p class="label">Specifications</p>
-        <h2 id="specs-title">Two sizes, one system.</h2>
-      </div>
-      <div class="rail-body">
-        <p class="lead">Both configurations run the same software, the same governance and the same support model. Sizing follows how many people use it and how much you need it to read.</p>
-      </div>
-    </div>
-
-    <div class="container">
-      <table class="spec">
-        <caption>Configurations</caption>
-        <thead>
-          <tr>
-            <th scope="col"><span class="sr-only">Specification</span></th>
-            <th scope="col">Pilot node <span>Department scale</span></th>
-            <th scope="col">Performance node <span>Multi department scale</span></th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">Compute</th>
-            <td data-config="Pilot node">One NVIDIA L4 class GPU</td>
-            <td data-config="Performance node">Dual NVIDIA L40S class GPUs</td>
-          </tr>
-          <tr>
-            <th scope="row">Models</th>
-            <td data-config="Pilot node">7B to 13B range with Arabic fine tuning</td>
-            <td data-config="Performance node">13B to 70B range at full throughput</td>
-          </tr>
-          <tr>
-            <th scope="row">Retrieval corpus</th>
-            <td data-config="Pilot node">Hundreds of thousands of documents</td>
-            <td data-config="Performance node">Millions of documents</td>
-          </tr>
-          <tr>
-            <th scope="row">Concurrent users</th>
-            <td data-config="Pilot node">20 to 50</td>
-            <td data-config="Performance node">100 to 300</td>
-          </tr>
-          <tr>
-            <th scope="row">Networking</th>
-            <td data-config="Pilot node">Isolated, no outbound route</td>
-            <td data-config="Performance node">Isolated, no outbound route</td>
-          </tr>
-          <tr>
-            <th scope="row">Typical fit</th>
-            <td data-config="Pilot node">A first deployment in one department</td>
-            <td data-config="Performance node">An enterprise standard across sites</td>
-          </tr>
-        </tbody>
-      </table>
     </div>
   </section>
 
@@ -447,7 +392,6 @@
         <li><a href="#product">Product</a></li>
         <li><a href="#work">Use cases</a></li>
         <li><a href="#deployment">Deployment</a></li>
-        <li><a href="#specs">Specifications</a></li>
         <li><a href="#compliance">Governance</a></li>
         <li><a href="#faq">FAQ</a></li>
         <li><a href="#company">Company</a></li>

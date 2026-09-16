@@ -206,18 +206,15 @@ a:hover { color: var(--accent-deep); }
 .ops dt { font-family: var(--mono); font-size: 12px; letter-spacing: 0.05em; text-transform: uppercase; color: var(--text-3); }
 .ops dd { color: var(--text-2); font-size: 15.5px; }
 
-/* Specifications table */
-.spec { width: 100%; border-collapse: collapse; }
-.spec caption {
-  text-align: start; font-family: var(--mono); font-size: 11.5px; letter-spacing: 0.06em;
-  text-transform: uppercase; color: var(--text-3); padding-block-end: 18px;
+/* Sizing note, in place of a specification table */
+.sizing {
+  margin-block-start: 56px; padding-block-start: 24px; border-top: 1px solid var(--line-strong);
+  font-size: 17px; color: var(--text-2); max-width: 88ch;
 }
-.spec th, .spec td { text-align: start; vertical-align: top; padding: 18px 24px 18px 0; border-bottom: 1px solid var(--line); }
-.spec thead th { border-bottom: 1px solid var(--line-strong); font-size: 17px; font-weight: 600; color: var(--ink); }
-.spec thead th span { display: block; margin-block-start: 4px; font-family: var(--mono); font-size: 11.5px; font-weight: 400; letter-spacing: 0.05em; text-transform: uppercase; color: var(--text-3); }
-.spec tbody th { width: 190px; font-family: var(--mono); font-size: 12.5px; font-weight: 400; letter-spacing: 0.04em; text-transform: uppercase; color: var(--text-3); }
-.spec td { font-size: 15.5px; color: var(--text); width: 32%; }
-.spec tbody tr:hover td, .spec tbody tr:hover th { background: color-mix(in srgb, var(--accent-soft) 45%, transparent); }
+.sizing span {
+  display: inline-block; margin-inline-end: 14px;
+  font-family: var(--mono); font-size: 11.5px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent);
+}
 
 /* Governance, the one dark band */
 .section-dark { background: var(--ink); color: var(--on-dark); overflow: hidden; }
@@ -377,12 +374,8 @@ a:hover { color: var(--accent-deep); }
   .ships { grid-template-columns: 1fr; gap: 26px; }
   .rows li { grid-template-columns: 1fr; gap: 6px; }
   .ops > div { grid-template-columns: 1fr; gap: 6px; padding: 18px 20px; }
-  .spec, .spec thead, .spec tbody, .spec tr, .spec th, .spec td { display: block; width: auto; }
-  .spec thead { display: none; }
-  .spec tbody tr { padding-block: 18px; border-bottom: 1px solid var(--line); }
-  .spec tbody th { width: auto; padding: 0 0 12px; border: 0; }
-  .spec tbody td { padding: 0 0 10px; border: 0; }
-  .spec tbody td::before { content: attr(data-config); display: block; font-family: var(--mono); font-size: 11px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--text-3); margin-block-end: 3px; }
+  .sizing { margin-block-start: 40px; font-size: 16px; }
+  .sizing span { display: block; margin-block-end: 6px; }
   .faq summary { font-size: 16px; gap: 14px; }
   .faq details p { padding-inline-end: 0; }
   .contact-form { padding: 24px; }
