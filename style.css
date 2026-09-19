@@ -87,6 +87,12 @@ a:hover { color: var(--primary); }
 .wm-root { color: var(--ink-strong); }
 .wordmark:hover .wm-root { color: var(--ink); }
 
+/* Brand mark: the pill segment "b", top left. Green as drawn, dark segments rendered white on the dark canvas */
+.brand-mark { display: inline-flex; align-items: center; flex: none; min-height: 44px; min-width: 44px; }
+.brand-mark svg { display: block; height: 40px; width: auto; }
+.mark-g { fill: #00ff00; }
+.mark-w { fill: var(--ink-strong); }
+
 /* Type */
 .eyebrow {
   font-size: 14px; font-weight: 600; line-height: 20px;
@@ -153,7 +159,7 @@ h3 { font-size: 20px; font-weight: 600; line-height: 28px; color: var(--ink-stro
 .nav-panel-cta { display: none; }
 .nav-cta { margin-inline-start: auto; }
 .menu-btn {
-  display: none; width: 44px; height: 44px; margin-inline-start: -10px;
+  display: none; width: 44px; height: 44px; margin-inline-start: -4px;
   background: transparent; border: 0; cursor: pointer; padding: 10px;
 }
 .menu-btn span { display: block; height: 1.5px; background: var(--ink); border-radius: 1px; transition: transform 200ms var(--ease); }
@@ -360,6 +366,8 @@ h3 { font-size: 20px; font-weight: 600; line-height: 28px; color: var(--ink-stro
 @media (max-width: 899px) {
   .menu-btn { display: block; }
   .nav-cta { display: none; }
+  .nav-inner { gap: 16px; }
+  .brand-mark svg { height: 34px; }
   .wordmark { margin-inline-start: auto; font-size: 30px; }
   .nav-panel {
     display: none; position: absolute; inset-inline: 0; top: var(--nav-h);
