@@ -1,0 +1,4 @@
+# Local tooling and unused source assets, never published
+.impeccable/
+assets/bg/
+.DS_Store
