@@ -146,7 +146,7 @@ h3 { font-size: 20px; font-weight: 600; line-height: 28px; color: var(--ink-stro
 .nav-links { display: flex; gap: 24px; }
 .nav-links a {
   display: inline-flex; align-items: center; min-height: 44px;
-  font-size: 14px; line-height: 20px; color: var(--body); text-decoration: none;
+  font-size: 16px; line-height: 24px; font-weight: 500; color: var(--body); text-decoration: none;
   transition: color 200ms var(--ease);
 }
 .nav-links a:hover { color: var(--ink-strong); }
@@ -368,7 +368,7 @@ h3 { font-size: 20px; font-weight: 600; line-height: 28px; color: var(--ink-stro
   }
   .site-nav.open .nav-panel { display: flex; }
   .nav-links { flex-direction: column; gap: 0; }
-  .nav-links a { font-size: 16px; padding-block: 4px; border-bottom: 1px solid var(--hairline); }
+  .nav-links a { font-size: 18px; line-height: 28px; padding-block: 8px; border-bottom: 1px solid var(--hairline); }
   .nav-panel-cta { display: inline-flex; margin-block-start: 12px; }
 }
 
